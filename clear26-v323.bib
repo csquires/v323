@@ -7,7 +7,7 @@
     volume = {323},
     start = {2026-04-06},
     end = {2026-04-08},
-    address = {Cambridge, USA},
+    address = {Broad Institute of MIT and Harvard, Cambridge, USA},
     conference_url = {https://www.cclear.cc/2026},
     conference_number = {5},
     editor = {Mazaheri, Bijan and Hanson, Niels Richard},
@@ -15,7 +15,7 @@
     series = {Proceedings of Machine Learning Research},
 }
 
-@InProceedings{pmlr-v323-ma26,
+@InProceedings{ma26,
     title = {Consistent End-to-End Estimation for Counterfactual Fairness},
     author = {Ma, Yuchen and Melnychuk, Valentyn and Frauen, Dennis and Feuerriegel, Stefan},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -29,7 +29,7 @@
     abstract = {Counterfactual fairness seeks to ensure that the prediction for an individual is the same as that in a counterfactual world under a different sensitive attribute. However, achieving counterfactual fairness in practice is challenging due to several issues. In this paper, we discuss two key issues and suggest workarounds for them. (1) Counterfactual fairness involves counterfactual quantities, which rely on unobservable outcomes and inference and which require additional, non-trivial counterfactual identifiability assumptions. Here, we explicitly state the counterfactual identifiability assumptions necessary to guarantee point identification of counterfactuals up to a measure-preserving indeterminacy (MPI). Without such counterfactual identifiability assumptions, counterfactual fairness can not be reliably fulfilled, even with infinite data. (2) Even assuming counterfactual identifiability holds, many existing baselines for counterfactual fairness lack consistency in estimating counterfactuals and thus may yield predictions that are unfair. In our work, we redefine the notion of consistency so that it (i) is compatible with the counterfactual identifiability up to an MPI, and (ii) allows to enforce worst-case counterfactual fairness. Following this definition of consistency, we develop an end-to-end method that allows for consistent estimation of counterfactuals (which we call a generative counterfactual fairness network). Once the counterfactuals are consistently estimated, we can use regularization as an in-processing approach to enforce the worst-case counterfactual fairness in prediction models. With our work, we aim to spur a discussion of when and where counterfactual fairness can be reliably achieved to ensure a safe and ethical use.},
 }
 
-@InProceedings{pmlr-v323-bodik26,
+@InProceedings{bodik26,
     title = {Retrospective Counterfactual Prediction by Conditioning on the Factual Outcome: A Cross-World Approach},
     author = {Bodik, Juraj},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -43,7 +43,7 @@
     abstract = {Retrospective causal questions ask what would have happened to an observed individual had they received a different treatment. We study the problem of estimating $\mu(x,y)=\mathbb{E}[Y(1)\mid X=x,Y(0)=y]$, the expected counterfactual outcome for an individual with covariates $x$ and observed outcome $y$, and constructing valid prediction intervals under the Neyman-Rubin superpopulation model. This quantity is generally not identified without additional assumptions. To link the observed and unobserved potential outcomes, we work with a cross-world correlation  $\rho(x)=cor(Y(1),Y(0)\mid X=x)$; plausible bounds on $\rho(x)$ enable a principled approach to this otherwise unidentified problem. We introduce retrospective counterfactual  estimators $\hat{\mu}_{\rho}(x,y)$ and prediction intervals $C(x,y)$ that asymptotically satisfy $P[Y(1)\in C(x,y)\mid X=x, Y(0)=y]\ge1-\alpha$ under standard causal assumptions. Many common baselines implicitly correspond to endpoint choices  $\rho=0$ or $\rho=1$ (ignoring the factual outcome or treating the counterfactual as a shifted factual outcome). Interpolating between these cases through cross-world dependence yields substantial gains in both theory and practice.},
 }
 
-@InProceedings{pmlr-v323-loranchet26,
+@InProceedings{loranchet26,
     title = {Local Markov Equivalence for PC-style Local Causal Discovery and Identification of Controlled Direct Effects},
     author = {Loranchet, Timoth{\'e}e and Assaad, Charles K.},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -59,7 +59,7 @@ However, learning the full essential graph is computationally intensive and reli
 In particular, we introduce the local essential graph (LEG), a graph structure defined relative to a target variable, and present LocPC, an algorithm that learns the LEG using solely local conditional independence tests. Building on this, we develop LocPC-CDE, which extracts precisely the portion of the LEG that is both necessary and sufficient for identifying a CDE. Compared to global methods, our algorithms require less conditional independence tests and operate under weaker assumptions while maintaining theoretical guarantees. We illustrate the effectiveness of our approach on synthetic and real data.},
 }
 
-@InProceedings{pmlr-v323-baumgartner26,
+@InProceedings{baumgartner26,
     title = {Disentangling Dynamical Systems: Causal Representation Learning Meets Local Sparse Attention},
     author = {Baumgartner, Markus W. and Lei, Anson and Watson, Joe and Posner, Ingmar},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -79,7 +79,7 @@ We instantiate system parameter identification as a variational inference proble
 We empirically validate our approach across four synthetic domains, demonstrating its ability to recover highly disentangled representations that baselines fail to recover. Corroborating our theoretical analysis, our results confirm that enforcing local causal structure is often necessary for full identifiability.},
 }
 
-@InProceedings{pmlr-v323-park26,
+@InProceedings{park26,
     title = {A fine-grained look at causal effects in causal spaces},
     author = {Park, Junhyung and Zhou, Yuqing},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -93,7 +93,7 @@ We empirically validate our approach across four synthetic domains, demonstratin
     abstract = {The notion of causal effect is fundamental across many scientific disciplines. Traditionally, quantitative researchers have studied causal effects at the level of variables; for example, how a certain drug dose (W) causally affects a patient's blood pressure (Y). However, in many modern data domains, the raw variables—such as pixels in an image or tokens in a language model—do not have the semantic structure needed to formulate meaningful causal questions. In this paper, we offer a more fine-grained perspective by studying causal effects at the level of *events*, drawing inspiration from probability theory, where core notions such as independence are first given for events and \sigma-algebras, before random variables enter the picture. Within the measure-theoretic framework of causal spaces, a recently introduced axiomatisation of causality, we first introduce several binary definitions that determine whether a causal effect is present, as well as proving some properties of them linking causal effect to (in)dependence under an intervention measure. Further, we provide quantifying measures that capture the strength and nature of causal effects on events, and show that we can recover the common measures of treatment effect as special cases.},
 }
 
-@InProceedings{pmlr-v323-nam26,
+@InProceedings{nam26,
     title = {Understanding Task Representations in Neural Networks via Bayesian Ablation},
     author = {Nam, Andrew Joohun and Campbell, Declan Iain and Griffiths, Thomas L. and Cohen, Jonathan D. and Leslie, Sarah-Jane},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -107,7 +107,7 @@ We empirically validate our approach across four synthetic domains, demonstratin
     abstract = {Neural networks are powerful tools for cognitive modeling due to their flexibility and emergent properties. However, interpreting their learned representations remains challenging due to their sub-symbolic semantics. We introduce a novel probabilistic framework for interpreting latent task representations in neural networks. Inspired by Bayesian inference, our approach defines a distribution over representational units to infer their causal contributions to task performance. Using ideas from information theory, we propose a suite of tools and metrics to illuminate key model properties, including representational distributedness, manifold complexity, and polysemanticity.},
 }
 
-@InProceedings{pmlr-v323-spindler26,
+@InProceedings{spindler26,
     title = {Valid Inference for Treatment Effects under Multimodal Confounding},
     author = {Spindler, Martin and Bach, Philipp and Chernozhukov, Victor and Klaassen, Sven and Teichert-Kluge, Jan and Vijaykumar, Suhas},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -122,7 +122,7 @@ We empirically validate our approach across four synthetic domains, demonstratin
 The proposed methods and architectures are evaluated on a correspondingly generated semi-synthetic dataset and compared to standard approaches, highlighting the potential benefit of using text and images directly in causal studies and of our approach. In the experiments, our methods performs well and achieves the nominal coverage. Our findings might be valuable for researchers and practitioners in economics, marketing, finance, medicine and data science in general who are interested in estimating causal quantities using non-traditional data.},
 }
 
-@InProceedings{pmlr-v323-dimitriou26,
+@InProceedings{dimitriou26,
     title = {Causal-ICM: A Data Fusion Framework For Heterogeneous Treatment Effect Estimation With Multi-Task Gaussian Processes},
     author = {Dimitriou, Evangelos and Fong, Edwin and Tarp, Jens Magelund and DiazOrdaz, Karla and Lehmann, Brieuc},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -136,7 +136,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Bridging the gap between internal and external validity is crucial for heterogeneous treatment effect estimation. Randomised controlled trials (RCTs), favoured for their internal validity due to randomisation, often encounter challenges in generalising findings due to strict eligibility criteria. Observational studies, on the other hand, may provide stronger external validity through larger and more representative samples but can suffer from compromised internal validity due to unmeasured confounding. Motivated by these complementary characteristics, we propose a novel Bayesian nonparametric approach, $\textit{Causal-ICM}$, leveraging multi-task Gaussian processes to integrate data from both RCTs and observational studies. In particular, we introduce a parameter that controls the degree of borrowing between the datasets and prevents the observational dataset from dominating the estimation. We propose a data-adaptive procedure for choosing the optimal value of the parameter. $\textit{Causal-ICM}$ outperforms other data fusion methods in point estimation across the covariate support of the observational study and provides principled uncertainty quantification for the estimated treatment effects. We demonstrate the robust performance of $\textit{Causal-ICM}$ in diverse scenarios through multiple simulation studies and a real-world study.},
 }
 
-@InProceedings{pmlr-v323-sato26,
+@InProceedings{sato26,
     title = {DAG Learning from Zero-Inflated Count Data Using Continuous Optimization},
     author = {Sato, Noriaki and Scutari, Marco and Kawano, Shuichi and Yamaguchi, Rui and Imoto, Seiya},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -150,7 +150,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {We address network structure learning from zero-inflated count data by casting each node as a zero-inflated generalized linear model and optimizing a smooth, score-based objective under a directed acyclic graph constraint. Our Zero-Inflated Continuous Optimization (ZICO) approach uses node-wise likelihoods with canonical links and enforces acyclicity through a differentiable surrogate constraint combined with sparsity regularization. ZICO achieves superior performance with faster runtimes on simulated data. It also performs comparably to or better than common algorithms for reverse engineering gene regulatory networks. ZICO is fully vectorized and mini-batched, enabling learning on larger variable sets with practical runtimes in a wide range of domains.},
 }
 
-@InProceedings{pmlr-v323-zhao26,
+@InProceedings{zhao26,
     title = {A novel hybrid approach for positive-valued DAG learning},
     author = {Zhao, Yao},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -164,7 +164,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Causal discovery from observational data remains a fundamental challenge in machine learning and statistics, particularly when variables represent inherently positive quantities such as gene expression levels, asset prices, company revenues, or population counts, which naturally follow multiplicative rather than additive dynamics. We propose the Hybrid Moment-Ratio Scoring (H-MRS) algorithm, a novel approach for learning directed acyclic graphs (DAGs) from positive-valued data that combines moment-based scoring with log-scale regression. The key insight is that for positive-valued variables, the moment ratio $\frac{\mathbb{E}\left[X_j^2\right]}{\mathbb{E}\left[\left(\mathbb{E}\left[X_j \mid S\right]\right)^2\right]}$ provides an effective criterion for causal ordering, where $S$ denotes candidate parent sets. H-MRS combines log-scale Ridge regression for moment-ratio estimation with greedy ordering construction based on raw-scale moment ratios, followed by ElasticNet-based parent selection to recover the final DAG structure. We evaluate H-MRS on synthetic log-linear data, showing that it achieves competitive precision and recall. The algorithm is computationally efficient and naturally respects positivity constraints, making it well-suited for applications such as genomics and economics. Our results highlight that combining log-scale modeling with raw-scale moment ratios offers a practical and robust framework for causal discovery in positive-valued domains.},
 }
 
-@InProceedings{pmlr-v323-madaleno26a,
+@InProceedings{madaleno26a,
     title = {Bayesian Hierarchical Invariant Prediction},
     author = {Madaleno, Francisco and Sand, Pernille Julie Viuff and Pereira, Francisco C. and Mejia, Sergio Hernan Garrido},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -178,7 +178,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {We propose Bayesian Hierarchical Invariant Prediction (BHIP) reframing Invariant Causal Prediction (ICP) through the lens of Hierarchical Bayes. We leverage the hierarchical structure to explicitly test invariance of causal mechanisms under heterogeneous data, resulting in improved computational scalability for a larger number of predictors compared to ICP. Moreover, given its Bayesian nature BHIP enables the use of prior information. We evaluate BHIP on both synthetic and real-world datasets, demonstrating its potential as an alternative inference method to ICP and related methods.},
 }
 
-@InProceedings{pmlr-v323-bjelac26,
+@InProceedings{bjelac26,
     title = {Automatic debiased machine learning and sensitivity analysis for sample selection models},
     author = {Bjelac, Jakob and Chernozhukov, Victor and Klotz, Phil-Adrian and Kueck, Jannis and Schmitz, Theresa M. A.},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -192,7 +192,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {In this paper, we extend the Riesz representation framework to causal inference under sample selection, where both treatment assignment and outcome observability are non-random. Formulating the problem in terms of a Riesz representer enables stable estimation and a transparent decomposition of omitted variable bias into three interpretable components: a data-identified scale factor, outcome confounding strength, and selection confounding strength. For estimation, we employ the ForestRiesz estimator, which accounts for selective outcome observability while avoiding the instability associated with direct propensity score inversion. We assess finite-sample performance through a simulation study and show that conventional double machine learning approaches can be highly sensitive to tuning parameters due to their reliance on inverse probability weighting, whereas the ForestRiesz estimator delivers more stable performance by leveraging automatic debiased machine learning. In an empirical application to the gender wage gap in the U. S., we find that our ForestRiesz approach yields larger treatment effect estimates than a standard double machine learning approach, suggesting that ignoring sample selection leads to an underestimation of the gender wage gap. Sensitivity analysis indicates that implausibly strong unobserved confounding would be required to overturn our results. Overall, our approach provides a unified, robust, and computationally attractive framework for causal inference under sample selection.},
 }
 
-@InProceedings{pmlr-v323-baldo26,
+@InProceedings{baldo26,
     title = {Retrieving Classes of Causal Orders with Inconsistent Knowledge Bases},
     author = {Baldo, Federico and Ferreira, Simon and Assaad, Charles K.},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -206,7 +206,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Traditional causal discovery methods often depend on strong, untestable assumptions, making them unreliable in real-world applications. In this context, Large Language Models (LLMs) have emerged as a promising alternative for extracting causal knowledge from text-based metadata, effectively consolidating domain expertise. However, LLMs are prone to hallucinations, necessitating strategies that account for these limitations. One effective approach is to use a consistency measure as a proxy of reliability. Moreover, LLMs do not clearly distinguish direct from indirect causal relationships, complicating the discovery of causal Directed Acyclic Graphs (DAGs), which are often sparse. This ambiguity is evident in the way informal sentences are formulated in various domains. For this reason, focusing on causal orders provides a more practical and direct task for LLMs. We propose a new method for deriving abstractions of causal orders that maximizes a consistency score obtained from an LLM. Our approach begins by computing pairwise consistency scores between variables, from which we construct a semi-complete partially directed graph that consolidates these scores into an abstraction. Using this structure, we identify both a maximally oriented partially directed acyclic graph and an optimal set of acyclic tournaments that maximize consistency across all configurations. We further demonstrate how both the abstraction and the class of causal orders can be used to estimate causal effects. We evaluate our method on a wide set of causal DAGs extracted from scientific literature in epidemiology and public health. Our results show that the proposed approach can effectively recover the correct causal order, providing a reliable and practical LLM-assisted causal framework.},
 }
 
-@InProceedings{pmlr-v323-drazkowski26a,
+@InProceedings{drazkowski26a,
     title = {Cross-Sectional Conditional Independence in Stationary Time Series: Graphical Equivalence and Completeness of Collider Separation},
     author = {Drazkowski, Hubert Marek},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -220,7 +220,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {We study cross-sectional conditional independence (CI) in strictly stationary time series represented by summary (local-dependence) graphs. Our focus is on the completeness of separation rules, i.e., when---and in what sense---graphical separation on the summary graph is not only sufficient, but also necessary for CI at a time slice. Prior work has established soundness of collider-based c-separation in discrete time and trek-graph separation in continuous time with respect to cross-sectional CI. We complement these results twofold. First, we show that, on summary graphs, c-separation and trek-graph separation induce the same equivalence classes of graphs. This identifies a single underlying graphical notion governing cross-sectional CI and reconciles discrete- and continuous-time separation rules. In addition, we translate c-separation to space-time graphs and introduce space-time trek separation completing the graphical separation picture. In essence, it is the collider structure that governs what shared past information travels to cross section through common ancestors and governs CI. Second, we prove the completeness of the collider separation for the discrete-time case. For any given summary graph, there exists a strictly stationary process whose cross-sectional law realizes all and only the c-separation statements. Moreover, within the family of stationary Gaussian VAR(1) models, in the absence of c-separation, parameter values that nonetheless yield independence form a Lebesgue measure-zero set. Together, these results sharpen the theoretical underpinnings of graphical reasoning about cross-sectional CI in stationary time series and clarify when faithfulness-type assumptions for causal discovery are generically justified for snapshots of dynamic Bayesian networks.},
 }
 
-@InProceedings{pmlr-v323-amaranath26,
+@InProceedings{amaranath26,
     title = {Improving Generative Methods for Causal Evaluation via Simulation-Based Inference},
     author = {Amaranath, Pracheta and Muralikrishnan, Vinitra and Sharma, Amit and Jensen, David},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -234,7 +234,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Generating synthetic datasets that accurately reflect real-world observational data is critical for evaluating causal estimators, but it remains a challenging task. Existing generative methods offer a solution by producing synthetic datasets anchored in the observed data (source data) while allowing variation in key parameters such as the treatment effect and amount of confounding bias. However, it is often unclear which generative methods to use and which values of parameters to choose when generating synthetic datasets. Moreover, existing methods typically require users to provide fixed point estimates of such parameters. This denies users the ability to express uncertainty over both generative methods and parameter values and removes the potential for posterior inference, potentially leading to unreliable estimator comparisons. We introduce simulation-based inference for causal evaluation (SBICE), a framework that treats the generative method and its corresponding generative parameters as uncertain and infers their posterior distribution given a source dataset. Leveraging techniques in simulation-based inference, SBICE identifies suitable generative methods and infers distributions over its parameter configurations to produce synthetic datasets closely aligned with the source data distribution. Empirical results demonstrate that SBICE improves the reliability of estimator evaluations by generating realistic datasets whose causal estimates closely match the estimates of the source data, making it a robust and uncertainty-aware approach to selecting causal estimators.},
 }
 
-@InProceedings{pmlr-v323-brouillard26,
+@InProceedings{brouillard26,
     title = {Learning a Spatial Partitioning and its Causal Relations from Temporal Data},
     author = {Brouillard, Philippe and Lachapelle, Sebastien and Kaltenborn, Julia and Gurwicz, Yaniv and Sridhar, Dhanya and Drouin, Alexandre and Nowack, Peer and Runge, Jakob and Rolnick, David},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -248,7 +248,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Scientific research often seeks to understand the causal structure underlying high-level variables in a system. For example, climate scientists study how phenomena, such as El Niño, affect other climate processes at remote locations across the globe. However, scientists typically collect low-level measurements, such as geographically distributed temperature readings. From these, one needs to learn both a mapping to causally-relevant latent variables, such as a high-level representation of the El Niño phenomenon and other processes, as well as the causal model over them. The challenge is that this task, called causal representation learning, is highly underdetermined from observational data alone, requiring other constraints during learning to resolve the indeterminacies. In this work, we consider the task of partitioning observed variables into disentangled factors, such as extracting regions from geographically gridded measurement data in climate research or capturing brain regions from neural activity data. We demonstrate the identifiability of the resulting model and propose a differentiable method, Causal Discovery with Single-parent Decoding (CDSD), that simultaneously learns, from temporal data, the underlying latents and a causal graph over them. We assess the validity of our theoretical results using simulated data and showcase the practical validity of our method in an application to real-world data from the climate science field.},
 }
 
-@InProceedings{pmlr-v323-avery26,
+@InProceedings{avery26,
     title = {Evaluating and Learning Robust Bandit Policies Under Uncertain Causal Mechanisms},
     author = {Avery, Katherine and Pendse, Chinmay and Jensen, David},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -262,7 +262,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Causal graphical models can encode large amounts structural knowledge, both from the background knowledge of domain experts and the structural knowledge discovered from randomized experiments or observational data. However, though we may know the general structure of causal relationships, we often do not know the exact causal mechanisms. In this work, we propose a causal multi-armed bandit evaluation and learning algorithm that can reason effectively despite uncertainty over conditional probability distributions. Further, we show how conditional independence testing can be used to choose variables for modeling. We find that the structural equation model (SEM) approach gives more accurate evaluations compared to traditional approaches, particularly as the range of possible causal mechanisms grows. Further, the SEM approach learns low-variance policies, and it learns an optimal policy, assuming the model is sufficiently well-specified. Traditional approaches can converge to local extrema or fail to converge at all.},
 }
 
-@InProceedings{pmlr-v323-hagan26,
+@InProceedings{hagan26,
     title = {Causal Importance for Physics-Informed Machine Learning},
     author = {Hagan, Daniel Fiifi Tawia and Mortier, Thomas and Decancq, Cas and Miralles, Diego G.},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -276,7 +276,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Predictive modelling in complex dynamical systems often relies on machine learning (ML) models trained on correlated and partially redundant predictors. Standard feature importance measures are usually correlation-based and model-specific, providing limited guidance for disentangling mediators, confounders, and true drivers, and generally offering no principled route for causally motivated prediction. Here we bridge these by explicitly importing causal information, derived from the multivariate Liang-Kleeman information flow (LKIF) framework, into ML models. Here, we decompose the differential information flow into four conditioner-importance indices (Mediator Dominance Index, Moderation Gain, Confounding Pressure, and Causal Sufficiency Rate), then we construct a Causal Importance Score (CIS) that summarises the relevance of each conditioner to a given coupling. Finally, we use this CIS as a prior for two complementary ML strategies: (i) a baseline Random Forest (RF), and (ii) a neural network (NN) whose input-layer attention weights are regularised towards CIS-based priors. Using a real-world testbed with four interacting eco-hydrological variables and a target, we show that CIS-regularised NNs can closely align their learned feature usage with the physically motivated causal ranking, while retaining competitive predictive skill. This provides a concrete example of causally informed prediction, where causal diagnostics do not merely interpret an already-trained black box, but actively shape the hypothesis space explored by the model and offer a principled handle on feature selection and dimensionality reduction.},
 }
 
-@InProceedings{pmlr-v323-huber26,
+@InProceedings{huber26,
     title = {Learning and Testing Exposure Mappings of Interference using Graph Convolutional Autoencoders},
     author = {Huber, Martin and Kueck, Jannis and Mattes, Mara},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -290,7 +290,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Interference or spillover effects arise when an individual's outcome (e.g., health) is influenced not only by their own treatment (e.g., vaccination) but also by the treatment of others, creating challenges for evaluating treatment effects. Exposure mappings provide a framework to study such interference by explicitly modeling how the treatment statuses of contacts within an individual's network affect their outcome. Most existing research relies on a priori exposure mappings of limited complexity, which may fail to capture the full range of interference effects. In contrast, this study applies a graph convolutional autoencoder to learn exposure mappings in a data-driven way, which exploit dependencies and relations within a network to more accurately capture interference effects. As our main contribution, we introduce a machine learning-based test for the validity of exposure mappings and thus test the identification of the direct effect. In this testing approach, the learned exposure mapping is used as an instrument to test the validity of a simple, user-defined exposure mapping. The test leverages the fact that, if the user-defined exposure mapping is valid (so that all interference operates through it), then the learned exposure mapping is statistically independent of any individual's outcome, conditional on the user-defined exposure mapping. Conversely, a violation of this conditional independence indicates that the researcher-defined mapping fails to capture some relevant interference. We propose a conditional mean (rather than full) independence test sufficient for identifying average direct effects and study its finite-sample performance via simulation.},
 }
 
-@InProceedings{pmlr-v323-mejia26,
+@InProceedings{mejia26,
     title = {Estimating Joint Interventional Distributions from Marginal Interventional Data},
     author = {Mejia, Sergio Hernan Garrido and Kirschbaum, Elke and Keki{\'c}, Armin and Sch{\"o}lkopf, Bernhard and Mastakouri, Atalanti A.},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -304,7 +304,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {In this paper we show how to exploit interventional data to acquire the joint conditional distribution of all the variables using the Maximum Entropy principle. To this end, we extend the Causal Maximum Entropy method to make use of data arising from identifiable interventional distributions in addition to data from the observational distribution. Using Lagrange duality, we prove that the solution to the Causal Maximum Entropy problem with interventional constraints lies in the exponential family, as in the Maximum Entropy solution. Our method allows us to perform two tasks of interest when marginal interventional distributions are provided for any subset of the variables. First, we show how to perform parental discovery from a mixture of observational and single-variable interventional data, and, second, how to infer joint interventional distributions. For the former task, we show on synthetically generated data, that our proposed method outperforms the state-of-the-art method on merging datasets, and yields comparable results to the KCI-test which requires access to joint observations of all variables.},
 }
 
-@InProceedings{pmlr-v323-lin26,
+@InProceedings{lin26,
     title = {Variance reduction combining pre-experiment and in-experiment data},
     author = {Lin, Zhexiao and Crespo, Pablo},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -318,7 +318,7 @@ The proposed methods and architectures are evaluated on a correspondingly genera
     abstract = {Online controlled experiments (A/B testing) are fundamental to data-driven decision-making in many companies. Improving the sensitivity of these experiments under fixed sample size constraints requires reducing the variance of the average treatment effect (ATE) estimator. Existing variance reduction techniques such as CUPED and CUPAC use pre-experiment data, but their effectiveness depends on how predictive those data are for outcomes measured during the experiment. In-experiment data are often more strongly correlated with the outcome, but using arbitrary post-treatment variables can introduce bias. In this paper, we propose a general, robust, and scalable framework that combines both pre-experiment and in-experiment data to achieve variance reduction. Our framework is simple, interpretable, and computationally efficient, making it practical for real-world deployment. We develop the asymptotic theory of the proposed estimator and provide consistent variance estimators. Empirical results from multiple online experiments conducted at Etsy demonstrate substantial additional variance reduction over current pipeline, even when incorporating only a few post-treatment covariates. These findings underscore the effectiveness of our framework in improving experimental sensitivity and accelerating data-driven decision-making.},
 }
 
-@InProceedings{pmlr-v323-massmann26,
+@InProceedings{massmann26,
     title = {Estimating PATE under positivity violations: SBART+SPL for high-dimensional covariates},
     author = {Ma{\ss}mann, Lennard},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -350,7 +350,7 @@ bility of SBART+SPL is illustrated by re-analyzing an empirical study that evalu
 exposure to natural gas compressor stations on cancer mortality rates across U.S. counties.},
 }
 
-@InProceedings{pmlr-v323-englberger26,
+@InProceedings{englberger26,
     title = {Unveiling Causal Calibration: How LLM Scale Influences Statistical Information Interpolation},
     author = {Englberger, Markus and Dhami, Devendra Singh},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -364,7 +364,7 @@ exposure to natural gas compressor stations on cancer mortality rates across U.S
     abstract = {There are two ways an LLM can learn statistical and causal knowledge during training: either by explicit statements about the causal scenario in the training corpus (e.g., ``the probability of developing lung cancer is 20\% if one has smoked for at least 10 years'', ``X and Y are independent conditioned on Z'', ``X is a cause of Y'' etc.) or by implicit presentations of the same information via tabular data from surveys or scenario descriptions. In this paper, we probe whether the LLM internally unifies these two sources of information. To this end, we test whether fine-tuning LLMs on implicit presentations of statistical knowledge influences the LLM's answers when explicitly prompted for such knowledge. By creating in-context learning tasks where both explicit and implicit statistical information are present, we also test whether language models can unify these two modes during inference. Experiments suggest that larger language models have some shared method of storing these two sources of information, whereas smaller language models seem to be less capable of unifying these sources.},
 }
 
-@InProceedings{pmlr-v323-zhu26a,
+@InProceedings{zhu26a,
     title = {Smoothing the Landscape: Causal Structure Learning via Diffusion Denoising Objectives},
     author = {Zhu, Hao and Zhou, Di and Slonim, Donna},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -378,7 +378,7 @@ exposure to natural gas compressor stations on cancer mortality rates across U.S
     abstract = {Understanding causal dependencies in observational data is critical for informing decision-making. These relationships are often modeled as Bayesian Networks (BNs) and Directed Acyclic Graphs (DAGs). Existing methods, such as NOTEARS and DAG-GNN, often face issues with scalability and stability in high-dimensional data, especially when there is a feature-sample imbalance. Here, we show that the denoising score matching objective of diffusion models could smooth the gradients for faster, more stable convergence. We also propose an adaptive k-hop acyclicity constraint that improves runtime over existing solutions that require matrix inversion. We name this framework Denoising Diffusion Causal Discovery (DDCD). Unlike generative diffusion models, DDCD utilizes the reverse denoising process to infer a parameterized causal structure rather than to generate data. We demonstrate the competitive performance of DDCDs on synthetic benchmarking data. We also show that our methods are practically useful by conducting qualitative analyses on two real-world examples. Code is available at this url: https://github.com/haozhu233/ddcd.},
 }
 
-@InProceedings{pmlr-v323-apfel26,
+@InProceedings{apfel26,
     title = {Learning control variables and instruments for causal analysis in observational data},
     author = {Apfel, Nicolas and Huber, Martin and Kueck, Jannis and Hatamyar, Julia},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -392,7 +392,7 @@ exposure to natural gas compressor stations on cancer mortality rates across U.S
     abstract = {This study introduces a data-driven, machine learning-based method to detect suitable control variables and instruments for assessing the causal effect of a treatment on an outcome in observational data. Our approach tests the joint existence of instruments, which are associated with the treatment but not directly with the outcome (at least conditional on observables), and suitable control variables, conditional on which the treatment is exogenous, and learns the partition of instruments and control variables from the observed data. The detection of sets of instruments and control variables relies on the condition that proper instruments are conditionally independent of the outcome given the treatment and suitable control variables. We establish the consistency of our method for detecting control variables and instruments under certain regularity conditions, investigate the finite sample performance through a simulation study, and provide an empirical application to health data from the Oregon Health Insurance Experiment.},
 }
 
-@InProceedings{pmlr-v323-braun26,
+@InProceedings{braun26,
     title = {Flow IV: Counterfactual Inference In Nonseparable Outcome Models Using Instrumental Variables},
     author = {Braun, Marc and Pe{\~n}a, Jose and Daoud, Adel},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -406,7 +406,7 @@ exposure to natural gas compressor stations on cancer mortality rates across U.S
     abstract = {To reach human level intelligence, learning algorithms need to incorporate causal reasoning. But identifying causality, and particularly counterfactual reasoning, remains elusive. In this paper, we make progress on counterfactual inference in nonseparable outcome models by utilizing instrumental variables (IVs). IVs are a classic tool for mitigating bias from unobserved confounders when estimating causal effects. While IV methods for effect estimation have been extended to nonseparable outcome models under different assumptions, existing IV approaches to counterfactual prediction typically assume one-dimensional outcomes and additive noise. In this paper, we show that under standard IV assumptions, along with the assumption that the outcome function is invertible and has a triangular structure, the treatment–outcome relationship becomes identifiable from observed data. We furthermore propose a method to learn the outcome function utilizing normalizing flows. This outcome function estimator can then be used to perform counterfactual inference. We refer to the method as \textit{Flow IV}.},
 }
 
-@InProceedings{pmlr-v323-de-temmerman26,
+@InProceedings{de-temmerman26,
     title = {Composite Graphical Causal Models for Inference on Heterogeneous-Indexed Data},
     author = {De Temmerman, Arne and Verbeke, Mathias},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -421,7 +421,7 @@ exposure to natural gas compressor stations on cancer mortality rates across U.S
 In this work, we introduce a novel approach, Composite Graphical Causal Models (CGCMs), that preserves the original indexing of each data table during both training and inference. By embedding resampling and aggregation operations directly within a GCM, our method eliminates the need for data homogenization as a preprocessing step. Specifically, a set of GCMs is employed each tailored to a distinct indexing, and connected using aggregation functions to model cross-index dependencies. As validated on synthetic datasets, this design enables a more representative modeling of heterogeneous-indexed processes, improving predictive performance and interpretability.},
 }
 
-@InProceedings{pmlr-v323-odenwald26,
+@InProceedings{odenwald26,
     title = {A Comprehensive Collection of Vignettes for Actual Causation},
     author = {Odenwald, Christian},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -452,7 +452,7 @@ actual causation. We find that none of the tested LLMs achieves higher performan
 the two implemented theories of causation.},
 }
 
-@InProceedings{pmlr-v323-kerkhove26,
+@InProceedings{kerkhove26,
     title = {Abstractions in Causal Models and Game Structures},
     author = {Kerkhove, Sylvia S. and Alechina, Natasha and Dastani, Mehdi},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -468,7 +468,7 @@ The second result is that a causal dependency in an abstract (high-level) model 
 These results set the stage for studying and using abstractions of causal models in multi-agent settings.},
 }
 
-@InProceedings{pmlr-v323-dimitsaki26,
+@InProceedings{dimitsaki26,
     title = {A causal machine learning framework for pharmacovigilance signal detection in electronic health records: Drug-induced acute kidney injury},
     author = {Dimitsaki, Stella and corinne, Isnard bagnis and Natsiavas, Pantelis and JAULENT, Marie-Christine},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -482,7 +482,7 @@ These results set the stage for studying and using abstractions of causal models
     abstract = {An increasing number of studies in the field of pharmacovigilance have been testing different Artificial intelligence (AI) approaches on Real-World Data (RWD). These studies use conventional AI to predict adverse drug reactions by detecting the correlation of patient characteristics with adverse effects (AE). Typically, these studies do not aim to establish any causal relationship between the suspect drugs and the AE. Causal inference enables machine learning methods to estimate the treatment effect of medical interventions using RWD. However, applying causal inference to RWD presents its own set of challenges. Therefore, a comprehensive framework is essential. In this study, the integration of PRINCIPLED, a process guide for causal inference using healthcare data, electronic health records from the MIMIC-IV database, and Causal Machine Learning (CML) to detect drug-induced acute kidney injury, demonstrates a framework that can provide interpretable, reproducible, and clinically relevant information. The results position CML as a promising approach for improving the accuracy, transparency, and regulatory acceptance of pharmacovigilance systems.},
 }
 
-@InProceedings{pmlr-v323-zecevic26,
+@InProceedings{zecevic26,
     title = {Causal Articulation Theory (CAT): Articulating Static and Temporal Causal Models Beyond LLM Rationalizations},
     author = {Ze{\v{c}}evi{\'c}, Matej and Dhami, Devendra Singh and Kersting, Kristian},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -496,7 +496,7 @@ These results set the stage for studying and using abstractions of causal models
     abstract = {In normative terms, a meaningful explanation should reflect how data is generated—this is precisely where causality becomes essential. Existing machine learning methods for explanation either miss this desideratum entirely or incorporate only partial causal knowledge. Large language models (LLMs), in particular, routinely produce fluent explanations that amount to unfaithful rationalizations of the underlying data-generating process. We therefore advocate a direct approach: derive explanations from the structural parameters and mechanisms of a causal model itself. To this end, we introduce Causal Articulation Theory (CAT), a formal account of how explanations can be articulated from a structural causal model (SCM). CAT addresses why-questions about individual units and uses a recursive articulation procedure that draws on both the graphical structure and causal effects encoded in the SCM. Using a small set of first-order articulation rules, we first develop CAT for static linear SCMs and show that it offers an appealing alternative to LLM rationalizations: CAT naturally distinguishes direct from indirect causes, captures the qualitative sign of causal effects, and remains robust to stochasticity in exogenous variables. To address ever-changing environments, we then extend CAT beyond static settings by relaxing initial assumptions to cover both temporal and agentic scenarios, yielding articulated explanations over time and action. For empirical corroboration, we present a series of experiments: (i) a user study examining the alignment between CAT-based articulations and human causal judgments in everyday domains, (ii) an investigation of CAT as a regularizer for causal discovery, and (iii) examples of articulated explanations in two temporal domains involving forecasting and a simple video game environment.},
 }
 
-@InProceedings{pmlr-v323-mareis26,
+@InProceedings{mareis26,
     title = {Cost-Aware Optimized Front-Door Experimental Design},
     author = {Mareis, Leopold and Drton, Mathias},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -510,7 +510,7 @@ These results set the stage for studying and using abstractions of causal models
     abstract = {Causal Effect estimation often succeeds cost-constrained, sequential data collection. This work considers multivariate additive noise linear front-door models with arbitrary unobserved confounding on treatment and response. We optimize the experimental design by balancing the statistical efficiency and measurement costs through partial data. The full‑data efficient influence function for the causal effect is derived, together with the geometry of all observed‑data influence functions. This characterization yields a closed-form optimal sampling policy and an estimator to minimize the asymptotic variance of regular asymptotically linear (RAL) estimators within a class of augmented full-data influence functions. The resulting design also covers back-door estimation. In simulations and applications to biological, medical, and industrial datasets, the optimized designs achieve substantial efficiency gains (5.3% to 31.9%) over naive full-sampling strategies.},
 }
 
-@InProceedings{pmlr-v323-brogueira26,
+@InProceedings{brogueira26,
     title = {Bivariate Causal Discovery Using Rate-Distortion MDL: An Information Dimension Approach},
     author = {Brogueira, Tiago and Figueiredo, Mario A. T.},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -524,7 +524,7 @@ These results set the stage for studying and using abstractions of causal models
     abstract = {Approaches to bivariate causal discovery based on the minimum description length (MDL) principle approximate the (uncomputable) Kolmogorov complexity of the models in each causal direction, selecting the one with the lower total complexity. The premise is that nature’s mechanisms are simpler in their true causal order. Inherently, the description length (complexity) in each direction includes the description of the cause variable and that of the causal mechanism. In this work, we argue that current state-of-the-art  MDL-based methods do not correctly address the problem of estimating the description length of the cause variable, effectively leaving the decision to the description length of the causal mechanism.  Based on rate-distortion theory, we propose a new way to measure the description length of the cause, corresponding to the minimum rate required to achieve a distortion level representative of the underlying distribution. This distortion level is deduced using rules from histogram-based density estimation, while the rate is computed using the related concept of information dimension, based on an asymptotic approximation. Combining it with a traditional approach for the causal mechanism, we introduce a new bivariate causal discovery method, termed rate-distortion MDL (RDMDL). We show experimentally that RDMDL achieves competitive performance on the Tübingen dataset. All the code and experiments are publicly available at github.com/tiagobrogueira/Causal-Discovery-In-Exchangeable-Data.},
 }
 
-@InProceedings{pmlr-v323-chiang26,
+@InProceedings{chiang26,
     title = {Information-theoretic signatures of causality in Bayesian networks and hypergraphs},
     author = {Chiang, Sung En and Liu, Zhaolu and Peach, Robert and Barahona, Mauricio},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -541,7 +541,7 @@ We first show that in Bayesian networks unique information precisely characteriz
 Our results position PID as a rigorous, model-agnostic foundation for inferring both pairwise and higher-order causal structure, and introduce a fundamentally local information–theoretic viewpoint on causal discovery.},
 }
 
-@InProceedings{pmlr-v323-jorgensen26,
+@InProceedings{jorgensen26,
     title = {Causal Foundations of Collective Agency},
     author = {J{\o}rgensen, Frederik Hytting and Weichwald, Sebastian and Hammond, Lewis},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -568,7 +568,7 @@ Our framework aims to provide a foundation for theoretical and empirical work to
 predict, and control emergent collective agents in multi-agent AI systems},
 }
 
-@InProceedings{pmlr-v323-gajewski26,
+@InProceedings{gajewski26,
     title = {Nonparametric Greedy Equivalence Search with Prior-Fitted Networks},
     author = {Gajewski, Mateusz and Olko, Mateusz},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -583,7 +583,7 @@ predict, and control emergent collective agents in multi-agent AI systems},
 In this paper, we integrate TabPFN as a Bayesian likelihood estimator within nonparametric GES and conduct an extensive empirical evaluation of the resulting approach. The proposed method consistently outperforms state-of-the-art nonparametric causal discovery methods on a range of synthetic, simulated, and real-world datasets. These results highlight the PFN paradigm as a natural and promising direction for advancing causal discovery in complex real-world applications.},
 }
 
-@InProceedings{pmlr-v323-bergen26,
+@InProceedings{bergen26,
     title = {The Generalised Kernel Covariance Measure},
     author = {Bergen, Luca and Sejdinovic, Dino and Didelez, Vanessa},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -597,7 +597,7 @@ In this paper, we integrate TabPFN as a Bayesian likelihood estimator within non
     abstract = {We consider the problem of conditional independence (CI) testing and adopt a kernel-based approach. Kernel-based CI tests embed variables in reproducing kernel Hilbert spaces, regress their embeddings on the conditioning variables, and test the resulting residuals for marginal independence. This approach yields tests that are sensitive to a broad range of conditional dependencies. Existing methods, however, rely heavily on kernel ridge regression, which is computationally expensive when properly tuned and yields poorly calibrated tests when left untuned, which limits their practical usefulness. We propose the Generalised Kernel Covariance Measure (GKCM), a regression-model-agnostic kernel-based CI test that accommodates a broad class of regression estimators. Building on the Generalised Hilbertian Covariance Measure framework (Lundborg et al., 2022), we characterise conditions under which GKCM satisfies uniform asymptotic level guarantees. In simulations, GKCM paired with tree-based regression models frequently outperforms state-of-the-art CI tests across a diverse range of data-generating processes, achieving better type I error control and competitive or superior power.},
 }
 
-@InProceedings{pmlr-v323-balashankar26,
+@InProceedings{balashankar26,
     title = {Domain Faithfulness through Counterfactually Robust Learning},
     author = {Balashankar, Ananth and Bhardwaj, Ankit and Madan, Neelabh and Wies, Thomas and Subramanian, Lakshmi},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -611,7 +611,7 @@ In this paper, we integrate TabPFN as a Bayesian likelihood estimator within non
     abstract = {Domain-specific knowledge can often be expressed as suggestive rules defined over subgroups of data. Such rules, when encoded as hard constraints, are often not directly compatible with deep learning frameworks that train neural networks over batches of data. Also, domain-experts often use heuristics that cannot be encoded as logical rules. In this work, we propose a method where domain-experts' knowledge expressed as domain-specific rules over subgroups of data is leveraged in training domain faithful deep learning models using the modular components of counterfactual data augmentation, concept-based robust regularization, and parameter optimization. This translation of domain knowledge into custom primitives that can be augmented to existing state-of-the-art deep learning models improves the ability of domain experts to faithfully interpret and express model behavior, intervene through changes in the modeling specifications, and improve the overall performance of the model as compared to existing frameworks that incorporate deterministic declarative predicates. On one synthetic and three real-world tasks, we show that our method allows iterative refinement and is demonstrably more accurate.},
 }
 
-@InProceedings{pmlr-v323-drazkowski26b,
+@InProceedings{drazkowski26b,
     title = {Beware of Hinges in Proximal Variables Regression: Adjusting for Colliding-Mediators with Nuisance PV},
     author = {Drazkowski, Hubert Marek},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -627,7 +627,7 @@ causal model for continuous, possibly multivariate treatments and proxies, and d
 show that NPV recovers the causal effect when nuisance-span conditions hold.},
 }
 
-@InProceedings{pmlr-v323-sheth26,
+@InProceedings{sheth26,
     title = {IV Co-Scientist: Multi-Agent LLM Framework for Causal Instrumental Variable Discovery},
     author = {Sheth, Ivaxi and Jin, Zhijing and Wilder, Bryan and Janzing, Dominik and Fritz, Mario},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -641,7 +641,7 @@ show that NPV recovers the causal effect when nuisance-span conditions hold.},
     abstract = {In the presence of confounding between an endogenous variable and the outcome, instrumental variables (IVs) are used to isolate the causal effect of the endogenous variable. Identifying valid instruments requires interdisciplinary knowledge, creativity, and contextual understanding, making it a non-trivial task. In this paper, we investigate whether large language models (LLMs) can aid in this task. We perform a two-stage evaluation framework. First, we test whether LLMs can recover well-established instruments from the literature, assessing their ability to replicate standard reasoning. Second, we evaluate whether LLMs can identify and avoid instruments that have been empirically or theoretically discredited. Building on these results, we introduce IV Co-Scientist, a multi-agent system that proposes, critiques, and refines IVs for a given treatment–outcome pair. We also introduce a statistical test to contextualize consistency in the absence of ground truth. Our results show the potential of LLMs to discover novel valid instrumental variables from a large observational database.},
 }
 
-@InProceedings{pmlr-v323-madaleno26b,
+@InProceedings{madaleno26b,
     title = {Coarsening Causal DAG Models},
     author = {Madaleno, Francisco and Misra, Pratik and Markham, Alex},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -662,7 +662,7 @@ We contribute to this line of research by
 As proof of concept, we apply our algorithm on synthetic and real datasets with known ground truths, including measurements from a controlled physical system with interacting light intensity and polarization.},
 }
 
-@InProceedings{pmlr-v323-barnatchez26,
+@InProceedings{barnatchez26,
     title = {Debiased Machine Learning for Conformal Prediction of Counterfactual Outcomes Under Runtime Confounding},
     author = {Barnatchez, Keith and Josey, Kevin P. and Nethery, Rachel C. and Parmigiani, Giovanni},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -676,7 +676,7 @@ As proof of concept, we apply our algorithm on synthetic and real datasets with 
     abstract = {Data-driven decision making frequently relies on predicting counterfactual outcomes.  In practice, researchers commonly train counterfactual prediction models on a source dataset to inform decisions on a possibly separate target population. Conformal prediction has arisen as a popular method for producing assumption-lean prediction intervals for counterfactual outcomes that would arise under different treatment decisions in the target population of interest. However, existing methods require that every confounding factor of the treatment-outcome relationship  used for training on the source data is additionally measured  in the target population, risking miscoverage if important confounders are unmeasured in the target population. In this paper, we introduce a computationally efficient debiased machine learning framework that allows for valid prediction intervals when only a subset of confounders is measured in the target population, a common challenge referred to as runtime confounding. Grounded in  semiparametric efficiency theory, we show the resulting prediction intervals achieve  desired coverage rates with faster convergence compared to standard methods. Through numerous synthetic and semi-synthetic experiments, we demonstrate the utility of our proposed method.},
 }
 
-@InProceedings{pmlr-v323-zhang26,
+@InProceedings{zhang26,
     title = {Estimation and Inference for Causal Explainability},
     author = {Zhang, Weihan and Gao, Zijun},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -695,7 +695,7 @@ For a null hypothesis on the boundary, i.e., zero explainability, we show its eq
 Finally, we illustrate the empirical efficacy of our approach through simulations as well as an immigration experiment dataset, where we investigate how individual features and their interactions shape public opinion toward admitting immigrants.},
 }
 
-@InProceedings{pmlr-v323-ehrlichman26,
+@InProceedings{ehrlichman26,
     title = {Causal Discovery for Efficient Offline RL with Factored Action Spaces},
     author = {Ehrlichman, Cecilia and Dykstra, Michael and Tang, Shengpu and Makar, Maggie},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -709,7 +709,7 @@ Finally, we illustrate the empirical efficacy of our approach through simulation
     abstract = {Offline policy optimization is often sample-inefficient, especially when the action space is large, a problem that commonly arises in healthcare applications and multi-agent tasks. Many domains, however, admit a combinatorial action space, where sub-actions affect future states and rewards independently of one another. Past work either makes a priori assumptions about sub-action independence leading to efficient but potentially biased policy optimization, or fails to leverage potential independence, sacrificing sample efficiency. In contrast, we propose a two-step framework that leverages causal discovery for efficient policy optimization without introducing bias. Our approach (i) discovers the causal structure underlying the environment’s dynamics from observational data, and (ii) exploits this structure to restrict the admissible policy class to a simpler, unbiased class. We provide theoretical guarantees characterizing settings under which our approach leads to efficient unbiased policy learning. Empirically, we demonstrate that our approach leads to more efficient policy optimization in settings with limited observational data, across both single-agent healthcare tasks and multi-agent settings. Our code is available at https://github.com/cehr123/DiFaRL.},
 }
 
-@InProceedings{pmlr-v323-orujlu26,
+@InProceedings{orujlu26,
     title = {Causal Process Models: Reframing Dynamic Causal Graph Discovery as a Reinforcement Learning Problem},
     author = {Orujlu, Turan and Gumbsch, Christian and Butz, Martin V. and Wu, Charley M},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -723,7 +723,7 @@ Finally, we illustrate the empirical efficacy of our approach through simulation
     abstract = {Most neural models of causality assume static causal graphs, failing to capture the dynamic and sparse nature of physical interactions where causal relationships emerge and dissolve over time. We introduce the Causal Process Framework and its neural implementation, Causal Process Models (CPMs), for learning sparse, time-varying causal graphs from visual observations. Unlike traditional approaches that maintain dense connectivity, our model explicitly constructs causal edges only when objects actively interact, dramatically improving both interpretability and computational efficiency. We achieve this by casting dynamic interaction-graph construction for world modeling as a multi-agent reinforcement learning problem, where specialized agents sequentially decide which objects are causally connected at each timestep. Our key innovation is a structured representation that factorizes object and force vectors along three learned dimensions (mutability, causal relevance, and control relevance), enabling the automatic discovery of semantically meaningful encodings. We demonstrate that a CPM significantly outperforms dense graph baselines on physical prediction tasks, particularly for longer horizons and varying object counts.},
 }
 
-@InProceedings{pmlr-v323-markham26,
+@InProceedings{markham26,
     title = {Intervening to learn and compose causally disentangled representations},
     author = {Markham, Alex and Hirsch, Isaac and Chang, Jeri A. and Solus, Liam and Aragam, Bryon},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -737,7 +737,7 @@ Finally, we illustrate the empirical efficacy of our approach through simulation
     abstract = {In designing generative models, it is commonly believed that in order to learn useful latent structure, we face a fundamental tension between expressivity and structure. In this paper we challenge this view by proposing a new approach to training arbitrarily expressive generative models that simultaneously learn causally disentangled concepts. This is accomplished by adding a simple \emph{context module} to an arbitrarily complex black-box model, which learns to process concept information by implicitly inverting linear representations from the model's encoder. Inspired by the notion of intervention in a causal model, our module selectively modifies its architecture during training, allowing it to learn a compact joint model over different contexts. We show how adding this module leads to causally disentangled representations that can be composed for out-of-distribution generation on both real and simulated data. The resulting models can be trained end-to-end or fine-tuned from pre-trained models. To further validate our proposed approach, we prove a new identifiability result that extends existing work on identifying structured representations.},
 }
 
-@InProceedings{pmlr-v323-mokhoro26,
+@InProceedings{mokhoro26,
     title = {Bayesian Causal Discovery Networks for Linear Mixed Data},
     author = {Mokhoro, Moabi and Bucur, Ioan Gabriel and Heskes, Tom and Bouwman, Jildau and Claassen, Tom},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -751,7 +751,7 @@ Finally, we illustrate the empirical efficacy of our approach through simulation
     abstract = {Causal discovery from observational data is challenging due to limited sample sizes and noise, motivating probabilistic approaches that represent uncertainty over causal structures and parameters. Bayesian Causal Discovery Networks (BCD Nets) and related methods approximate posterior distributions over graphs, but existing approaches primarily focus on continuous data, with limited support for mixed discrete–continuous settings common in healthcare and economics. In this work, we extend BCD Nets to handle linear mixed data. Our approach incorporates an appropriate likelihood function for mixed data into the BCD Nets framework, enabling it to jointly model discrete and continuous variables. Experiments on synthetic and real-world datasets show that our method significantly outperforms a state-of-the-art causal discovery model for mixed data in both structural and causal effects accuracy.},
 }
 
-@InProceedings{pmlr-v323-panayiotou26,
+@InProceedings{panayiotou26,
     title = {Causal Discovery in Action: Learning Chain-Reaction Mechanisms from Interventions},
     author = {Panayiotou, Panayiotis and {\c{S}}im{\c{s}}ek, {\"O}zg{\"u}r},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -765,7 +765,7 @@ Finally, we illustrate the empirical efficacy of our approach through simulation
     abstract = {Causal discovery is challenging in general dynamical systems because, without strong structural assumptions, the underlying causal graph may not be identifiable even from interventional data. However, many real-world systems exhibit directional, cascade-like structure, in which components activate sequentially and upstream failures suppress downstream effects. We study causal discovery in such chain-reaction systems and show that the causal structure is uniquely identifiable from blocking interventions that prevent individual components from activating. We propose a minimal estimator with finite-sample guarantees, achieving exponential error decay and logarithmic sample complexity. Experiments on synthetic models and diverse chain-reaction environments demonstrate reliable recovery from a few interventions, while observational heuristics fail in regimes with delayed or overlapping causal effects.},
 }
 
-@InProceedings{pmlr-v323-asiaee26,
+@InProceedings{asiaee26,
     title = {Sharp Bounds for Treatment Effect Generalization under Outcome Distribution Shift},
     author = {Asiaee, Amir and Pal, Samhita and Beck, Cole and Huling, Jared Davis},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -796,7 +796,7 @@ tighter intervals than worst-case bounds, and remain informative across a range 
 realistic violations of transportability.},
 }
 
-@InProceedings{pmlr-v323-vishnubhatla26,
+@InProceedings{vishnubhatla26,
     title = {Proxy-Guided Measurement Calibration},
     author = {Vishnubhatla, Saketh and Wan, Shu and Harrison, Andre and Raglin, Adrienne and liu, huan},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -823,7 +823,7 @@ our approach and evaluate it on synthetic data, semi-synthetic datasets derived 
 trials, and a real-world case study of disaster loss reporting. Our code will be publicly available.},
 }
 
-@InProceedings{pmlr-v323-zhu26b,
+@InProceedings{zhu26b,
     title = {Causal and Active Learning-Based Counterfactual Chest X-ray Generation for Supporting Clinical Decision-Making in Lung Disease},
     author = {Zhu, Yifei and Mohr, Greta and Zhang, Lei and Sainsbury, Christopher and Dong, Feng and Maclay, John D and Lowe, David J and Lagnado, David and Ye, Xujiong},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -837,7 +837,7 @@ trials, and a real-world case study of disaster loss reporting. Our code will be
     abstract = {Lung diseases such as lung cancer are major contributors to global morbidity, requiring accurate diagnostic decisions for optimal patient outcomes. While deep learning has advanced medical imaging, the lack of causal inference limits its clinical utility. This study proposes a causal generative framework for counterfactual analysis of Chest X-rays, guided by expert model supervision to ensure clinical plausibility. To solve data imbalance and enhance robustness, we introduce a recurrent active learning strategy that utilises "forgetting rates" to select informative samples. Experimental results demonstrate effectiveness improvements of 9.25% on the MIMIC dataset and 13.40% on ChestXray8. Furthermore, two-stage human expert evaluations confirm that the model generates highly realistic synthetic data that maintains a clinical heavy-tailed distribution. These high-quality counterfactuals not only improve diagnostic accuracy but also facilitate confidence calibration for clinicians through interpretable evidence. Our findings demonstrate that integrating causal modeling with expert supervision and active learning provides a robust, clinically meaningful tool for pulmonary diagnostic decision-making.},
 }
 
-@InProceedings{pmlr-v323-jung26,
+@InProceedings{jung26,
     title = {Information-Theoretic Causal Bounds under Unmeasured Confounding},
     author = {Jung, Yonghan and Kang, Bogyeong},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
@@ -851,7 +851,7 @@ trials, and a real-world case study of disaster loss reporting. Our code will be
     abstract = {We develop a data-driven information-theoretic framework for the sharp partial identification of causal effects under unmeasured confounding. Existing approaches often rely on restrictive assumptions, such as bounded or discrete outcomes, require external inputs (e.g., instrumental variables, proxies, or user-specified sensitivity parameters), necessitate full structural causal model specifications, or focus solely on population-level averages while neglecting covariate-conditional treatment effects. We overcome all four limitations simultaneously by establishing novel information-theoretic, data-driven divergence bounds. Our key theoretical contribution establishes that the $f$-divergence between the observational distribution $P(Y \mid A=a, X=x)$ and the interventional distribution $P(Y \mid \mathrm{do}(A=a), X=x)$ is upper bounded by a function of the propensity score alone. This result enables sharp partial identification of conditional causal effects directly from observational data, without requiring external sensitivity parameters, auxiliary variables, full structural specifications, or outcome boundedness assumptions. For practical implementation, we develop a semiparametric estimator satisfying Neyman orthogonality, which enables $\sqrt{n}$-consistent inference even when nuisance functions are estimated via flexible machine learning methods. Simulation studies and real-world data applications demonstrate that our framework provides tight and valid causal bounds across a wide range of data-generating processes.},
 }
 
-@InProceedings{pmlr-v323-aryan26,
+@InProceedings{aryan26,
     title = {Differentiable Causal Search},
     author = {Aryan, Kaveh and Chockler, Hana and Mousavi, Mohammad Reza},
     booktitle = {Proceedings of the Fifth Conference on Causal Learning and Reasoning},
